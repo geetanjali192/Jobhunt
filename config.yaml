@@ -1,0 +1,204 @@
+filters:
+  include_titles:
+    # Software Engineering
+    - '\bsoftware\b.*\b(engineer|developer)\b'
+    - '\b(engineer|developer)\b.*\bsoftware\b'
+    - '\bsoftware development\b'
+    - '\bsoftware engineer\b'
+    - '\bsoftware developer\b'
+    - '\bsoftware development engineer\b'
+    - '\bsoftware engineering\b'
+    - '\bsde\b'
+    - '\bprogrammer\b'
+
+    # Full Stack / Web
+    - '\bfull[\s-]?stack\b'
+    - '\bfull[\s-]?stack developer\b'
+    - '\bfull[\s-]?stack engineer\b'
+    - '\bweb developer\b'
+    - '\bweb engineer\b'
+    - '\bweb development\b'
+
+    # Frontend / React
+    - '\bfrontend developer\b'
+    - '\bfront[- ]end developer\b'
+    - '\bfrontend engineer\b'
+    - '\bfront[- ]end engineer\b'
+    - '\breact developer\b'
+    - '\breact engineer\b'
+    - '\bjavascript developer\b'
+    - '\bjavascript engineer\b'
+
+    # Backend / Node
+    - '\bbackend developer\b'
+    - '\bback[- ]end developer\b'
+    - '\bbackend engineer\b'
+    - '\bback[- ]end engineer\b'
+    - '\bnode\.?js developer\b'
+    - '\bnode\.?js engineer\b'
+    - '\bexpress\.?js developer\b'
+    - '\bapi developer\b'
+    - '\bbackend development\b'
+
+    # MERN
+    - '\bmern developer\b'
+    - '\bmern stack developer\b'
+    - '\bmern engineer\b'
+    - '\bmern stack\b'
+
+    # Python / Java
+    - '\bpython developer\b'
+    - '\bpython engineer\b'
+    - '\bjava developer\b'
+    - '\bjava engineer\b'
+
+    # AI / GenAI / ML
+    - '\bai engineer\b'
+    - '\bai developer\b'
+    - '\bartificial intelligence engineer\b'
+    - '\bartificial intelligence developer\b'
+    - '\bmachine learning engineer\b'
+    - '\bmachine learning developer\b'
+    - '\bgenai\b'
+    - '\bgenerative ai\b'
+    - '\bgenerative ai engineer\b'
+    - '\bgenerative ai developer\b'
+    - '\bgenai engineer\b'
+    - '\bgenai developer\b'
+    - '\bllm engineer\b'
+    - '\bllm developer\b'
+    - '\bai application\b'
+    - '\bai applications\b'
+    - '\bapplied ai\b'
+    - '\bai\/ml engineer\b'
+    - '\bai\/ml developer\b'
+
+    # Application / Product / Technology
+    - '\bapplication developer\b'
+    - '\bapplication engineer\b'
+    - '\bproduct engineer\b'
+    - '\btechnology analyst\b'
+    - '\btechnology associate\b'
+    - '\bit analyst\b'
+    - '\bsoftware analyst\b'
+
+    # Fresher / Entry Level
+    - '\bassociate engineer\b'
+    - '\bassociate software\b'
+    - '\bassociate developer\b'
+    - '\bjunior engineer\b'
+    - '\bjunior developer\b'
+    - '\bgraduate engineer\b'
+    - '\bgraduate developer\b'
+    - '\bgraduate software engineer\b'
+    - '\bgraduate software developer\b'
+    - '\bentry[\s-]?level\b'
+    - '\bnew grad\b'
+    - '\btrainee\b'
+    - '\bengineering trainee\b'
+    - '\bsoftware trainee\b'
+    - '\bgraduate engineer trainee\b'
+    - '\btrainee software engineer\b'
+    - '\btrainee software developer\b'
+
+    # Internships
+    - '\bsoftware engineer intern\b'
+    - '\bsoftware developer intern\b'
+    - '\bsoftware development intern\b'
+    - '\bsoftware engineering intern\b'
+    - '\bfull[\s-]?stack intern\b'
+    - '\bfrontend intern\b'
+    - '\bbackend intern\b'
+    - '\bweb developer intern\b'
+    - '\bweb development intern\b'
+    - '\breact intern\b'
+    - '\bnode\.?js intern\b'
+    - '\bpython developer intern\b'
+    - '\bjava developer intern\b'
+    - '\bai intern\b'
+    - '\bai engineer intern\b'
+    - '\bai\/ml intern\b'
+    - '\bmachine learning intern\b'
+    - '\bgenerative ai intern\b'
+    - '\bgenai intern\b'
+    - '\bllm intern\b'
+
+  exclude_titles:
+    # Senior / Leadership
+    - '\bstaff\b'
+    - '\bprincipal\b'
+    - '\bdistinguished\b'
+    - '\bfellow\b'
+    - '\barchitect\b'
+    - '\bsenior\b'
+    - '\bdirector\b'
+    - '\bvp\b'
+    - '\bvice president\b'
+    - '\bhead of\b'
+    - '\bchief\b'
+    - '\bcto\b'
+    - '\bmanager\b'
+    - '\bmanagement\b'
+    - '\blead\b'
+
+    # Mobile / Game / Hardware
+    - '\bios\b'
+    - '\bandroid\b'
+    - '\bmobile\b'
+    - '\bgame\b'
+    - '\bembedded\b'
+    - '\bfirmware\b'
+    - '\bhardware\b'
+    - '\bvlsi\b'
+
+    # Data-focused roles
+    - '\bdata scientist\b'
+    - '\bmachine learning scientist\b'
+    - '\bresearch scientist\b'
+    - '\bdata analyst\b'
+    - '\bbusiness analyst\b'
+    - '\bdata engineer\b'
+
+    # QA / Testing
+    - '\bqa\b'
+    - '\bquality assurance\b'
+    - '\btest engineer\b'
+    - '\bautomation tester\b'
+    - '\bsoftware tester\b'
+    - '\btesting engineer\b'
+
+    # IT Support
+    - '\btechnical support\b'
+    - '\bit support\b'
+    - '\bhelp desk\b'
+    - '\bsystem administrator\b'
+    - '\bnetwork administrator\b'
+
+  locations:
+    - bangalore
+    - bengaluru
+    - hyderabad
+    - pune
+    - delhi
+    - noida
+    - gurgaon
+    - gurugram
+    - chennai
+    - mumbai
+    - india
+
+  allow_remote: true
+  max_age_days: 30
+
+screen_batch_size: 8
+screen_jd_chars: 1400
+draft_jd_chars: 6000
+
+score_threshold: 4.5
+max_per_digest: 5
+
+companies_file: companies.yaml
+profile_file: profile.json
+seen_file: seen.json
+digest_file: out/digest.html
+tracker_csv: out/tracker.csv

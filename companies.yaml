@@ -1,0 +1,39 @@
+# Boards to poll. One entry per company.
+#
+#   ats:   greenhouse | lever | ashby
+#   slug:  the company's board identifier (NOT its domain)
+#   name:  whatever you want to see in the digest
+#
+# The slug is the last path segment of the company's public careers board:
+#   https://boards.greenhouse.io/<slug>        -> ats: greenhouse
+#   https://jobs.lever.co/<slug>               -> ats: lever
+#   https://jobs.ashbyhq.com/<slug>            -> ats: ashby
+#
+# THESE ARE EXAMPLES — verify each one before you trust the output. Companies
+# migrate between ATS vendors and slugs go dead. Check a slug in your browser:
+#   https://boards-api.greenhouse.io/v1/boards/<slug>/jobs?content=true
+#   https://api.lever.co/v0/postings/<slug>?mode=json
+#   https://api.ashbyhq.com/posting-api/job-board/<slug>?includeCompensation=true
+#
+# A dead slug is not fatal: fetch_board prints the HTTP status and returns [],
+# so one bad entry never takes down the run. Watch the per-board job counts on
+# stdout — a board reporting 0 jobs every day is a slug that needs fixing.
+#
+# Start with 10-15 companies you would actually join. A list of 200 is mostly
+# noise and makes the prefilter counts impossible to reason about.
+companies:
+  - {ats: lever, slug: veeva, name: Veeva Systems} # :contentReference[oaicite:0]{index=0}
+  - {ats: lever, slug: hevodata, name: Hevo Data} # :contentReference[oaicite:1]{index=1}
+  - {ats: lever, slug: netomi, name: Netomi} # :contentReference[oaicite:2]{index=2}
+  - {ats: lever, slug: valgenesis, name: ValGenesis} # :contentReference[oaicite:3]{index=3}
+  - {ats: lever, slug: acceldata, name: Acceldata} # :contentReference[oaicite:4]{index=4}
+  - {ats: ashby, slug: handshake, name: Handshake} # :contentReference[oaicite:5]{index=5}
+  - {ats: ashby, slug: opengov, name: OpenGov} # :contentReference[oaicite:6]{index=6}
+  - {ats: ashby, slug: lgads, name: LG Ad Solutions} # :contentReference[oaicite:7]{index=7}
+  - {ats: ashby, slug: outmarket, name: Outmarket AI} # :contentReference[oaicite:8]{index=8}
+  - {ats: ashby, slug: zapier, name: Zapier} # :contentReference[oaicite:9]{index=9}python -m jobhunt run --limit 10
+  - {ats: ashby, slug: commure, name: Commure} # :contentReference[oaicite:10]{index=10}
+  - {ats: greenhouse, slug: coinbase, name: Coinbase} # :contentReference[oaicite:11]{index=11}
+  - {ats: greenhouse, slug: knowbe4, name: KnowBe4} # :contentReference[oaicite:12]{index=12}
+  - {ats: greenhouse, slug: gravitonresearchcapital, name: Graviton Research Capital} # :contentReference[oaicite:13]{index=13}
+  - {ats: greenhouse, slug: cialfo, name: Cialfo} # :contentReference[oaicite:14]{index=14}

@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-jobhunt}
+      POSTGRES_USER: ${POSTGRES_USER:-jobhunt}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in database/.env}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - jobhunt_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  jobhunt_postgres_data:
